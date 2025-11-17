@@ -1,0 +1,62 @@
+/* FULL PAGE STRUCTURE */
+.movies-page {
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ---------------- TOP QUOTES ---------------- */
+.quotes-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.quotes-section h1,
+.quotes-section h2,
+.quotes-section h3 {
+    margin: 0;
+    text-shadow: 0 0 10px red;
+}
+
+/* ---------------- MOVIE GRID ---------------- */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Movie box / card */
+.movie-card {
+    background: #111;
+    padding: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px red;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px red;
+}
+
+/* Movie image */
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Movie name */
+.movie-card h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+

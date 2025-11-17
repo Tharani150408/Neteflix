@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #2b0000, #8b0000);
+    background-size: 300% 300%;
+    animation: bg-move 10s infinite alternate;
+    height: 100vh;
+}
+
+@keyframes bg-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* ------------------ LOGIN BOX ------------------ */
+.login-container {
+    width: 350px;
+    margin: 200px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+    backdrop-filter: blur(4px);
+
+    /* Center inputs inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 0 0 5px red;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0px 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    background: #1a0000;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 10px red;
+    border-color: #ff1a1a;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #990000, #f53a3a);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 10px red;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff1a1a, #b30000);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4d4d;
+}
+
+/* ------------------ WELCOME TEXT ------------------ */
+.welcome-text {
+    color: white;
+    font-size: 22px;
+    text-shadow: 0 0 5px #ff4d4d;
+}
+
+/* ------------------ MODAL FIX (YOU WERE MISSING THIS) ------------------ */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;       /* IMPORTANT: makes modal visible */
+}
+
+.modal-content {
+    background: #1a0000;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+    color: white;
+    text-align: center;
+}
+
