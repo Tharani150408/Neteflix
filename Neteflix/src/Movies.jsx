@@ -11,7 +11,8 @@ import N7 from "./assets/N7.jpg";
 import N8 from "./assets/N8.webp";
 
 function Movies() {
-  const images = [
+
+  const movies = [
     { src: N1, title: "Movie 1" },
     { src: N2, title: "Movie 2" },
     { src: N3, title: "Movie 3" },
@@ -24,25 +25,23 @@ function Movies() {
 
   return (
     <div className="movies-page">
-
-      {/* ---- TOP QUOTES SECTION ---- */}
       <div className="quotes-section">
         <h1>“Cinema is the most beautiful fraud in the world.” — Jean-Luc Godard</h1>
       </div>
 
-      {/* ---- MOVIE GRID ---- */}
       <div className="movies-grid">
-        {images.map((movie, i) => (
+        {movies.map((movie, i) => (
           <div className="movie-card" key={i}>
             <img src={movie.src} alt={movie.title} />
             <h4>{movie.title}</h4>
           </div>
         ))}
       </div>
-
     </div>
   );
 }
 
 export default Movies;
+
+
 

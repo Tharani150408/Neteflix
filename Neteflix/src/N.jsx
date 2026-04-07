@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import "./Modal.css";
 
 
@@ -43,7 +44,7 @@ alert("Invalid username or password");
 return (
 <div className={showModal ? "blur-background" : ""}>
 <div className="login-container">
-<h2 className="title">Login</h2>
+<h2 className="title">Hello</h2>
 
 
 <input
